@@ -464,3 +464,18 @@ p { margin: 0 0 1em; }
 @media (max-width: 760px) {
   .prodotto .prezzo { white-space: normal; font-size: 1.15rem; line-height: 1.1; }
 }
+
+/* ---------- caricamento foto: comparsa morbida invece dello "scatto" ---------- */
+/* la classe .js viene messa solo se lo script funziona: senza JS le foto si vedono subito */
+.js .foto img { opacity: 0; transition: opacity .45s ease; }
+.js .foto img.caricata { opacity: 1; }
+.js .foto:not(.noimg) {
+  background-color: var(--verde-2);
+  background-image: linear-gradient(110deg, rgba(251, 248, 240, 0) 30%, rgba(251, 248, 240, .08) 50%, rgba(251, 248, 240, 0) 70%);
+  background-size: 250% 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js .foto:not(.noimg) { animation: attesa 1.4s ease-in-out infinite; }
+  .js .foto.pronta { animation: none; background-image: none; }
+  @keyframes attesa { from { background-position: 120% 0; } to { background-position: -20% 0; } }
+}
