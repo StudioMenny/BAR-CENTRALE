@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Listino · Bar Centrale</title>
+<meta name="description" content="Il listino del Bar Centrale: caffetteria, colazione, pranzo veloce, aperitivo, bibite e gelati con i prezzi.">
+<meta name="theme-color" content="#1d3a2a">
+<meta property="og:title" content="Listino · Bar Centrale">
+<meta property="og:description" content="Il listino del Bar Centrale: caffetteria, colazione, pranzo veloce, aperitivo, bibite e gelati con i prezzi.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Bar Centrale, torna alla home">Bar <span>Centrale</span></a>
+    <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Menu principale">
+      <ul><li><a href="index.html">Home</a></li><li><a href="menu.html" aria-current="page">Listino</a></li><li><a href="contatti.html">Contatti</a></li><li><a class="nav-chiama" href="tel:+393665488260">Chiama +39 366 548 8260</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="contenuto">
+
+<section class="testata">
+  <div class="wrap">
+    <h1>Il listino</h1>
+    <p>Tutto quello che trovi al bancone, con i prezzi. Scegli una voce per vedere solo quella.</p>
+  </div>
+</section>
+<section class="lavagna-sezione">
+  <div class="wrap">
+    <div class="filtri" role="group" aria-label="Filtra il listino"><button type="button" data-filtro="tutto" aria-pressed="true">Tutto</button><button type="button" data-filtro="caffetteria" aria-pressed="false">Caffetteria</button><button type="button" data-filtro="colazione" aria-pressed="false">Colazione</button><button type="button" data-filtro="pranzo" aria-pressed="false">Pranzo veloce</button><button type="button" data-filtro="aperitivo" aria-pressed="false">Aperitivo</button><button type="button" data-filtro="bibite" aria-pressed="false">Bibite e birre</button><button type="button" data-filtro="gelati" aria-pressed="false">Gelati e dolci</button></div>
+    <div class="lavagna">
+      <section class="categoria" id="caffetteria" aria-labelledby="t-caffetteria"><h2 id="t-caffetteria">Caffetteria</h2><p>La miscela della casa, macinata al momento.</p><ul class="voci"><li><div class="voce-riga"><strong>Caffè espresso</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,20 €</span></div></li><li><div class="voce-riga"><strong>Caffè macchiato</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,30 €</span></div><small>caldo o freddo</small></li><li><div class="voce-riga"><strong>Caffè decaffeinato / d'orzo / ginseng</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,40 €</span></div></li><li><div class="voce-riga"><strong>Caffè corretto</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">2,00 €</span></div><small>grappa, sambuca o Baileys</small></li><li><div class="voce-riga"><strong>Cappuccino</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,60 €</span></div><small>anche con latte vegetale</small></li><li><div class="voce-riga"><strong>Latte macchiato</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,80 €</span></div></li><li><div class="voce-riga"><strong>Marocchino</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,80 €</span></div><small>caffè, cacao e schiuma di latte</small></li><li><div class="voce-riga"><strong>Cioccolata calda</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div><small>con panna +0,50 €</small></li><li><div class="voce-riga"><strong>Tè e tisane</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">2,00 €</span></div><small>scelta in vetrina</small></li></ul></section>
+      <section class="categoria" id="colazione" aria-labelledby="t-colazione"><h2 id="t-colazione">Colazione</h2><p>Brioche sfornate ogni mattina.</p><ul class="voci"><li><div class="voce-riga"><strong>Brioche vuota</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,20 €</span></div></li><li><div class="voce-riga"><strong>Brioche alla crema, marmellata o cioccolato</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,30 €</span></div></li><li><div class="voce-riga"><strong>Brioche integrale al miele</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,40 €</span></div></li><li><div class="voce-riga"><strong>Krapfen</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,60 €</span></div><small>solo il fine settimana</small></li><li><div class="voce-riga"><strong>Spremuta d'arancia</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div><small>arance fresche</small></li><li><div class="voce-riga"><strong>Succhi di frutta</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">2,00 €</span></div></li></ul></section>
+      <section class="categoria" id="pranzo" aria-labelledby="t-pranzo"><h2 id="t-pranzo">Pranzo veloce</h2><p>Preparati al momento, anche da asporto.</p><ul class="voci"><li><div class="voce-riga"><strong>Tramezzino</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">2,50 €</span></div><small>tonno e uova, prosciutto e funghi, verdure</small></li><li><div class="voce-riga"><strong>Toast prosciutto e formaggio</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div></li><li><div class="voce-riga"><strong>Panino caldo</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">4,50 €</span></div><small>porchetta, cotto e brie, salame</small></li><li><div class="voce-riga"><strong>Piadina farcita</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">5,00 €</span></div></li><li><div class="voce-riga"><strong>Insalatona</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">7,00 €</span></div><small>su richiesta, chiedi al bancone</small></li></ul></section>
+      <section class="categoria" id="aperitivo" aria-labelledby="t-aperitivo"><h2 id="t-aperitivo">Aperitivo</h2><p>Servito con stuzzichini, dalle 18 in poi.</p><ul class="voci"><li><div class="voce-riga"><strong>Spritz Aperol o Campari</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">4,00 €</span></div></li><li><div class="voce-riga"><strong>Spritz Select</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">4,50 €</span></div></li><li><div class="voce-riga"><strong>Hugo</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">4,50 €</span></div></li><li><div class="voce-riga"><strong>Prosecco al calice</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,50 €</span></div></li><li><div class="voce-riga"><strong>Calice di vino</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div><small>rosso o bianco della zona</small></li><li><div class="voce-riga"><strong>Aperitivo analcolico</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,50 €</span></div></li><li><div class="voce-riga"><strong>Crodino / San Bitter</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div></li></ul></section>
+      <section class="categoria" id="bibite" aria-labelledby="t-bibite"><h2 id="t-bibite">Bibite e birre</h2><ul class="voci"><li><div class="voce-riga"><strong>Acqua naturale o frizzante 0,5 l</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">1,00 €</span></div></li><li><div class="voce-riga"><strong>Bibite in bottiglia</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">2,50 €</span></div></li><li><div class="voce-riga"><strong>Birra alla spina piccola</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div></li><li><div class="voce-riga"><strong>Birra alla spina media</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">5,00 €</span></div></li><li><div class="voce-riga"><strong>Birra in bottiglia</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,50 €</span></div></li></ul></section>
+      <section class="categoria" id="gelati" aria-labelledby="t-gelati"><h2 id="t-gelati">Gelati e dolci</h2><p>Nei mesi caldi, in vetrina frigo.</p><ul class="voci"><li><div class="voce-riga"><strong>Gelato confezionato</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">da 1,50 €</span></div></li><li><div class="voce-riga"><strong>Affogato al caffè</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,50 €</span></div></li><li><div class="voce-riga"><strong>Fetta di torta</strong><span class="puntini" aria-hidden="true"></span><span class="voce-prezzo">3,00 €</span></div><small>torte fatte in casa, chiedi i gusti</small></li></ul></section>
+    </div>
+    <p class="nota-listino">I prezzi sono comprensivi di IVA e valgono per la consumazione al bancone. Per allergeni e intolleranze chiedi al personale.</p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">Bar <span>Centrale</span></a>
+        <p style="margin-top:1rem;max-width:22rem">Caffè, colazioni, tramezzini e aperitivi in piazza dal 1978.</p>
+      </div>
+      <div>
+        <h3>Dove siamo</h3>
+        <ul>
+          <li>Via P. Sterzi 41<br>37054 Nogara (VR)</li>
+          <li><a href="tel:+393665488260">Tel. +39 366 548 8260</a></li>
+          <li><a href="mailto:studiomenny.web@gmail.com">studiomenny.web@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Orari</h3>
+        <ul class="orari" data-orari><li><span>Chiamaci per gli orari</span><span><a href="tel:+393665488260">+39 366 548 8260</a></span></li></ul>
+      </div>
+    </div>
+    <div class="footer-fondo">
+      <span>© <span data-anno>2026</span> Bar Centrale · P.IVA 00000000000</span>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="cookie.html">Cookie</a></li>
+        <li><a href="https://www.studiomenny.it/" target="_blank" rel="noopener">Sito di Studio Menny</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="cookie" role="region" aria-label="Informativa cookie">
+  <p>Questo sito non usa cookie di profilazione né strumenti di tracciamento. <a href="cookie.html">Dettagli</a></p>
+  <button class="btn btn-verde" type="button">Ho capito</button>
+</div>
+<button class="su" type="button" aria-label="Torna in cima alla pagina"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg></button>
+<script src="js/main.js" defer></script>
+</body>
+</html>

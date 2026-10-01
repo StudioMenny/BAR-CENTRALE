@@ -1,0 +1,15 @@
+FOTO DA METTERE IN QUESTA CARTELLA (nomi esatti, tutto minuscolo, .jpg)
+
+hero.jpg                  bancone con macchina del caffè (orizzontale, 1920 px)
+caffe.jpg                 tazzina di espresso
+cappuccino.jpg            cappuccino con schiuma
+brioche.jpg               brioche/cornetti in vetrina
+tramezzini.jpg            tramezzini
+spritz.jpg                spritz arancione con fetta d'arancia
+stuzzichini.jpg           stuzzichini/patatine/olive da aperitivo
+aperitivo-analcolico.jpg  aperitivo analcolico rosso
+interno.jpg               sala interna di un bar
+dehors.jpg                tavolini all'aperto in piazza
+barista.jpg               barista che prepara un caffè (verticale)
+
+Se una foto manca il sito non si rompe: mostra un riquadro verde con il nome del file.
