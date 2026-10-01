@@ -136,20 +136,34 @@ var ORARI = {
     window.addEventListener("resize", function () { if (window.innerWidth > 860) chiudi(); });
   }
 
-  /* ---------- foto mancanti: mostra un riquadro pulito ---------- */
+  /* ---------- foto: comparsa morbida + riquadro pulito se manca il file ---------- */
   function fotoMancanti() {
     var img = document.querySelectorAll(".foto img");
     for (var i = 0; i < img.length; i++) {
       (function (im) {
+        var fig = im.parentElement;
+        function mostra() {
+          im.classList.add("caricata");
+          if (fig) fig.classList.add("pronta");
+        }
         function segna() {
-          if (im.parentElement) im.parentElement.classList.add("noimg");
+          mostra();
+          if (fig) fig.classList.add("noimg");
           var btn = im.closest ? im.closest("button") : null;
           if (btn) { btn.classList.add("noimg-btn"); btn.disabled = true; }
         }
-        if (im.complete && im.naturalWidth === 0 && im.getAttribute("src")) segna();
-        im.addEventListener("error", segna);
+        if (im.complete) {
+          if (im.naturalWidth === 0 && im.getAttribute("src")) segna(); else mostra();
+        } else {
+          im.addEventListener("load", mostra);
+          im.addEventListener("error", segna);
+        }
       })(img[i]);
     }
+    // rete lentissima: dopo 6 secondi mostra comunque quello che c'è
+    setTimeout(function () {
+      for (var j = 0; j < img.length; j++) if (!img[j].classList.contains("caricata")) img[j].classList.add("caricata");
+    }, 6000);
   }
 
   /* ---------- filtri del listino ---------- */
@@ -237,6 +251,7 @@ var ORARI = {
 
   /* ---------- avvio ---------- */
   function avvia() {
+    window.barPronto = true;
     sicuro("orari", disegnaOrari);
     sicuro("stato", aggiornaStato);
     setInterval(function () { sicuro("stato", aggiornaStato); }, 60000);
