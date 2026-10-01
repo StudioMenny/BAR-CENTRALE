@@ -12,6 +12,8 @@
 <meta property="og:image" content="img/hero.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.barPronto)document.documentElement.classList.remove("js")},3000);</script>
 </head>
 <body>
 <a class="salta" href="#contenuto">Vai al contenuto</a>
@@ -52,7 +54,7 @@
       <p>Miscela tostata in una torrefazione della zona, brioche sfornate ogni mattina e tramezzini fatti a mano. Niente di complicato: le cose del bar, fatte bene.</p>
       <p class="firma">Franco e Lucia</p>
     </div>
-    <figure class="foto ilbar-foto" data-nome="Foto mancante: img/barista.jpg"><img src="img/barista.jpg" alt="Il barista prepara un caffè al bancone" width="1000" height="1250" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure>
+    <figure class="foto ilbar-foto" data-nome="Foto mancante: img/barista.jpg"><img src="img/barista.jpg" alt="Il barista prepara un caffè al bancone" width="1000" height="1250" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure>
   </div>
 </section>
 
@@ -63,13 +65,13 @@
       <p>Qualche classico di casa. Il listino completo con tutti i prezzi è nella pagina dedicata.</p>
     </div>
     <div class="mosaico">
-      <article class="prodotto grande"><figure class="foto " data-nome="Foto mancante: img/caffe.jpg"><img src="img/caffe.jpg" alt="Espresso in tazzina" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Il nostro caffè</h3><span class="prezzo">1,20 €</span></div></article>
-      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/cappuccino.jpg"><img src="img/cappuccino.jpg" alt="Cappuccino con schiuma" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Cappuccino</h3><span class="prezzo">1,60 €</span></div></article>
-      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/brioche.jpg"><img src="img/brioche.jpg" alt="Brioche in vetrina" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Brioche</h3><span class="prezzo">1,30 €</span></div></article>
-      <article class="prodotto largo"><figure class="foto " data-nome="Foto mancante: img/tramezzini.jpg"><img src="img/tramezzini.jpg" alt="Tramezzini sul bancone" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Tramezzini</h3><span class="prezzo">2,50 €</span></div></article>
-      <article class="prodotto largo"><figure class="foto " data-nome="Foto mancante: img/spritz.jpg"><img src="img/spritz.jpg" alt="Spritz con fetta d'arancia" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Spritz</h3><span class="prezzo">4,00 €</span></div></article>
-      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/stuzzichini.jpg"><img src="img/stuzzichini.jpg" alt="Stuzzichini per l'aperitivo" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Stuzzichini</h3><span class="prezzo">gratis</span></div></article>
-      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/aperitivo-analcolico.jpg"><img src="img/aperitivo-analcolico.jpg" alt="Aperitivo analcolico" width="1200" height="900" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Analcolico</h3><span class="prezzo">3,50 €</span></div></article>
+      <article class="prodotto grande"><figure class="foto " data-nome="Foto mancante: img/caffe.jpg"><img src="img/caffe.jpg" alt="Espresso in tazzina" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Il nostro caffè</h3><span class="prezzo">1,20 €</span></div></article>
+      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/cappuccino.jpg"><img src="img/cappuccino.jpg" alt="Cappuccino con schiuma" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Cappuccino</h3><span class="prezzo">1,60 €</span></div></article>
+      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/brioche.jpg"><img src="img/brioche.jpg" alt="Brioche in vetrina" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Brioche</h3><span class="prezzo">1,30 €</span></div></article>
+      <article class="prodotto largo"><figure class="foto " data-nome="Foto mancante: img/tramezzini.jpg"><img src="img/tramezzini.jpg" alt="Tramezzini sul bancone" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Tramezzini</h3><span class="prezzo">2,50 €</span></div></article>
+      <article class="prodotto largo"><figure class="foto " data-nome="Foto mancante: img/spritz.jpg"><img src="img/spritz.jpg" alt="Spritz con fetta d'arancia" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Spritz</h3><span class="prezzo">4,00 €</span></div></article>
+      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/stuzzichini.jpg"><img src="img/stuzzichini.jpg" alt="Stuzzichini per l'aperitivo" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Stuzzichini</h3><span class="prezzo">gratis</span></div></article>
+      <article class="prodotto "><figure class="foto " data-nome="Foto mancante: img/aperitivo-analcolico.jpg"><img src="img/aperitivo-analcolico.jpg" alt="Aperitivo analcolico" width="1200" height="900" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure><div class="prodotto-testo"><h3>Analcolico</h3><span class="prezzo">3,50 €</span></div></article>
     </div>
     <div class="mosaico-piede"><a class="btn btn-verde" href="menu.html">Vedi tutto il listino</a></div>
   </div>
@@ -93,12 +95,12 @@
   <div class="wrap">
     <div class="intro-sezione"><h2>Dentro e fuori</h2><p>La sala, il bancone e i tavolini in piazza.</p></div>
     <div class="galleria">
-      <button type="button" aria-label="Ingrandisci: La sala interna del bar"><figure class="foto " data-nome="Foto mancante: img/interno.jpg"><img src="img/interno.jpg" alt="La sala interna del bar" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
-      <button type="button" aria-label="Ingrandisci: I tavolini fuori in piazza"><figure class="foto " data-nome="Foto mancante: img/dehors.jpg"><img src="img/dehors.jpg" alt="I tavolini fuori in piazza" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
-      <button type="button" aria-label="Ingrandisci: Il barista prepara un caffè"><figure class="foto " data-nome="Foto mancante: img/barista.jpg"><img src="img/barista.jpg" alt="Il barista prepara un caffè" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
-      <button type="button" aria-label="Ingrandisci: La vetrina delle brioche"><figure class="foto " data-nome="Foto mancante: img/brioche.jpg"><img src="img/brioche.jpg" alt="La vetrina delle brioche" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
-      <button type="button" aria-label="Ingrandisci: Spritz al tramonto"><figure class="foto " data-nome="Foto mancante: img/spritz.jpg"><img src="img/spritz.jpg" alt="Spritz al tramonto" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
-      <button type="button" aria-label="Ingrandisci: Un espresso appena fatto"><figure class="foto " data-nome="Foto mancante: img/caffe.jpg"><img src="img/caffe.jpg" alt="Un espresso appena fatto" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: La sala interna del bar"><figure class="foto " data-nome="Foto mancante: img/interno.jpg"><img src="img/interno.jpg" alt="La sala interna del bar" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: I tavolini fuori in piazza"><figure class="foto " data-nome="Foto mancante: img/dehors.jpg"><img src="img/dehors.jpg" alt="I tavolini fuori in piazza" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: Il barista prepara un caffè"><figure class="foto " data-nome="Foto mancante: img/barista.jpg"><img src="img/barista.jpg" alt="Il barista prepara un caffè" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: La vetrina delle brioche"><figure class="foto " data-nome="Foto mancante: img/brioche.jpg"><img src="img/brioche.jpg" alt="La vetrina delle brioche" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: Spritz al tramonto"><figure class="foto " data-nome="Foto mancante: img/spritz.jpg"><img src="img/spritz.jpg" alt="Spritz al tramonto" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
+      <button type="button" aria-label="Ingrandisci: Un espresso appena fatto"><figure class="foto " data-nome="Foto mancante: img/caffe.jpg"><img src="img/caffe.jpg" alt="Un espresso appena fatto" width="1200" height="1200" decoding="async" onerror="this.parentElement.classList.add('noimg')"></figure></button>
     </div>
   </div>
 </section>
